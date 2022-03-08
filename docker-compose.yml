@@ -1,0 +1,9 @@
+# docker-compose.yml #
+version: "3.4"
+services:
+  app:
+    image: alendwahida/debslim-laravel-php8:dev
+    working_dir: /root/laravel-boilerplate
+    command: "php -S 0.0.0.0:7887 -t public/"
+    ports:
+      - 7887:7887
